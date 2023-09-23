@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
+    <title>index</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1 class="logo">
+            联通用户管理系统
+        </h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <div class="home-content">
+            <h1 class="l-heading">欢迎来到联通用户管理系统</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia modi inventore enim quia. Ratione, odit!</p>
+            <a href="/login/" class="btn">登录</a>
+        </div>
+    </header>
+    <!--section:what we go-->
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center"><span class="text-primary">What </span>We Do</h2>
+            <div class="items">
+                <div class="itme">
+                    <div>
+                        <h3>部门管理</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Libero accusantium </p>
+                    </div>
+                </div>
+                <div class="itme">
+                    <div>
+                        <h3>用户管理</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Libero accusantium </p>
+                    </div>
+                </div>
+                <div class="itme">
+                    <div>
+                        <h3>靓号管理</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Libero accusantium </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section:who we are-->
+    <section id="who">
+        <div class="who-img"></div>
+        <div class="who-text bg-dark p-2">
+            <h2 class="m-heading"><span class="text-primary">Who </span>We Are</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore,
+                non, adipisci repellendus quod iste, voluptatum ab laboriosam numquam quos veniam
+                consequatur distinctio dicta eligendi aspernatur minus consectetur. Exercitationem, quae.</p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <li>Mark Smith CEO</li>
+                <li>Shannon Johnsn: CFO</li>
+                <li>John Corbit Dsads Adskfnksds</li>
+                <li>Janjet Sfdsfs Chane Invent</li>
+                <li>Kara Fast Navebtasthm</li>
+            </ul>
+        </div>
+    </section>
+    <!--section:clients-->
+    <section id="clients" class="py-1">
+        <h2 class="m-heading text-center">
+            <span class="text-primary">Our </span>clients
+        </h2>
+        <div class="items py-1">
+            <div><img src="{% static 'img/logo1s.jpg'%}" alt="logo1"></div>
+            <div><img src="{% static 'img/logo2.jpg'%}" alt="logo2"></div>
+            <div><img src="{% static 'img/logo3.jpg'%}" alt="logo3"></div>
+            <div><img src="{% static 'img/logo4.jpg'%}" alt="logo4"></div>
+            <div><img src="{% static 'img/logo5s.jpg'%}" alt="logo5"></div>
+        </div>
+    </section>
+    <!--section:contact us-->
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">Contact Us</h2>
+            <p>如有疑问请填写以下信息联系我们!</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" placeholder="Please enter name">
+                </div>
+                <div class="form-group">
+                    <label for="email">emali</label>
+                    <input type="text" name="email" id="email" placeholder="Please enter email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Please enter phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">message</label>
+                    <textarea type="text" name="message" id="message" placeholder="Please enter message"></textarea>
+                </div>
+            </form>
+            <input type="submit" value="send" class="btn btn-dark">
+        </div>
+        <div class="contact-img"></div>
+    </section>
+    <!--footer-->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2023, 联通用户管理系统, All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
